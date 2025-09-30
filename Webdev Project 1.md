@@ -23,7 +23,6 @@
      
      ul {
         list-style-type: none;
-        padding-left: 0; /* Optional: removes indentation */
      }
      
      li {
@@ -90,6 +89,6 @@
        <li> Silver Age: Campy and colorful adventures </li>
        <li> Modern Age: Dark, psychological narratives</li>
      </ul>
-```
      </body>
      </html>
+```
