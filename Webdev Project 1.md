@@ -4,13 +4,46 @@
   <head>
     <title>BATMAN</title>
    <style>
+   
+     body {
+       color:#fbe106;
+     }
      
+     img {
+       height:250px;
+       width:250px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       
+     }
+     p {
+       text-align: center;
+     }
+     
+     ul {
+        list-style-type: none;
+        padding-left: 0; /* Optional: removes indentation */
+     }
+     
+     li {
+     background-image: url('https://i.pinimg.com/1200x/a2/d7/7f/a2d77fa20f81652a2819fd31a0c34554.jpg');
+     background-repeat: no-repeat;
+     background-size: 16px 16px; /* Resize image */
+     background-position: 0 5px;
+     padding-left: 24px; /* Space for image */
+     line-height: 24px;
+     }
+       body {
+       background-color: black;
+       }
    </style>
   </head>
   
   <body>
      <h1> BATMAN </h1>
      <h4>I AM VENGEANCE, I AM THE NIGHT, I AM BATMAN</h4>
+     <img src=https://i.pinimg.com/1200x/5b/98/32/5b983283abc3ba4949f4ee2362a9291c.jpg>
      <body> 
      <p> Batman, created by Bob Kane and Bill Finger in 1939,
      is one of DC Comics' most iconic superheroes. Known as the Dark Knight, 
@@ -58,6 +91,5 @@
        <li> Modern Age: Dark, psychological narratives</li>
      </ul>
 ```
-
      </body>
      </html>
