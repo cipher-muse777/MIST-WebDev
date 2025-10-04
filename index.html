@@ -1,92 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BATMAN</title>
-   <style>
-   
-     body {
-       color:#fbe106;
-     }
-     
-     img {
-       height:250px;
-       width:250px;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       
-     }
-     p {
-       text-align: center;
-     }
-     
-     ul {
-        list-style-type: none;
-     }
-     
-     li {
-     background-image: url('https://i.pinimg.com/1200x/a2/d7/7f/a2d77fa20f81652a2819fd31a0c34554.jpg');
-     background-repeat: no-repeat;
-     background-size: 16px 16px; /* Resize image */
-     background-position: 0 5px;
-     padding-left: 24px; /* Space for image */
-     line-height: 24px;
-     }
-       body {
-       background-color: black;
-       }
-   </style>
-  </head>
-  
-  <body>
-     <h1> BATMAN </h1>
-     <h4>I AM VENGEANCE, I AM THE NIGHT, I AM BATMAN</h4>
-     <img src=https://i.pinimg.com/1200x/5b/98/32/5b983283abc3ba4949f4ee2362a9291c.jpg>
-     <body> 
-     <p> Batman, created by Bob Kane and Bill Finger in 1939,
-     is one of DC Comics' most iconic superheroes. Known as the Dark Knight, 
-     he is billionaire Bruce Wayne by day and a masked vigilante by 
-     night,fighting crime in Gotham City using intellect, martial arts, and cutting-edge technology. Unlike many superheroes, Batman has no 
-     superpowers—his strength lie in his detective skills, psychological
-     depth, and moral complexity.
-     </p>
-     
-     <h3> Live-Action Movies</h3>
-     <ul>
-       <li> Batman (1943), Batman and Robin (1949) </li>
-       <li> Batman: The Movie (1966) </li>
-       <li> Batman, Returns, Forever, & Robin</li>
-       <li> The Dark Knight Trilogy</li>
-       <li> Batman v Superman, Justice League, The Flash </li>
-       <li> The Batman, The Batman: Part II </li>
-     </ul>
-     
-     <h3> Live-Action TV Series </h3>
-     <ul>
-      <li> Batman (1966–68) </li>
-      <li> Birds of Prey (2002–03) </li>
-      <li> Gotham (2014–19) </li>
-      <li> Titans (2018–23) </li>
-      <li> Batwoman (2019–22) </li>
-      <li> Gotham Knights (2023) </li>
-     </ul>
-     
-     <h3> Animated Series </h3>
-     <ul>
-     <li> Batman: The Animated Series (1992–95)</li>
-     <li> Batman Beyond (1999–2002) </li>
-     <li> The Batman (2004–08) </li>
-     <li> Batman: The Brave and the Bold (2008–11) </li>
-     <li> Beware the Batman (2013–14) </li>
-     <li> Batwheels (2022–present) </li>
-     <li> Batman: Caped Crusader (2024–present) </li>
-     </ul>
-     
-     <h3> Comic Eras </h3>
-     <ul>
-       <li> Golden Age: Noir-style detective stories</li>
-       <li> Silver Age: Campy and colorful adventures </li>
-       <li> Modern Age: Dark, psychological narratives</li>
-     </ul>
-     </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom bulletpoints with bat logo */
+      .bat-list li {
+        list-style: none;
+        background-image: url('https://i.pinimg.com/1200x/a2/d7/7f/a2d77fa20f81652a2819fd31a0c34554.jpg');
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 0 6px;
+        padding-left: 28px;
+        line-height: 28px;
+        transition: all 0.25s ease;
+      }
+      .bat-list li:hover {
+        color: #fbe106;
+        text-shadow: 0 0 8px #fbe106;
+        transform: translateX(5px);
+      }
 
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fadeIn {
+        animation: fadeIn 0.8s ease forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-black via-gray-900 to-black text-yellow-400 font-mono">
+    <header class="text-center py-12 fadeIn">
+      <h1 class="text-6xl md:text-7xl font-extrabold tracking-widest drop-shadow-[0_0_12px_#fbe106]">
+        BATMAN
+      </h1>
+      <p class="text-lg md:text-xl italic mt-4 text-gray-300 hover:text-yellow-400 transition">
+        "I am vengeance. I am the night. I am Batman."
+      </p>
+    </header>
+
+    <div class="flex justify-center">
+      <img
+        src="https://i.pinimg.com/1200x/5b/98/32/5b983283abc3ba4949f4ee2362a9291c.jpg"
+        alt="Batman"
+        class="rounded-xl shadow-[0_0_25px_#fbe106] w-72 h-72 object-cover hover:scale-105 transition duration-500"
+      />
+    </div>
+
+    <section class="max-w-3xl mx-auto text-center mt-10 px-6 fadeIn">
+      <p class="text-gray-300 leading-relaxed text-lg">
+        Batman, created by <span class="text-yellow-500">Bob Kane</span> and
+        <span class="text-yellow-500">Bill Finger</span> in 1939, is one of DC's
+        most iconic heroes. Known as the Dark Knight, he is billionaire Bruce
+        Wayne by day and Gotham’s vigilante by night. With no superpowers,
+        Batman relies on his detective mind, martial arts mastery, and moral
+        code to fight crime.
+      </p>
+    </section>
+
+    <main class="max-w-4xl mx-auto mt-14 px-6 space-y-12">
+      <div class="fadeIn">
+        <h3 class="text-3xl font-bold mb-4 border-b border-yellow-600 pb-2">
+          🎬 Live-Action Movies
+        </h3>
+        <ul class="bat-list text-gray-200 space-y-2">
+          <li>Batman (1943), Batman and Robin (1949)</li>
+          <li>Batman: The Movie (1966)</li>
+          <li>Batman, Returns, Forever, & Robin</li>
+          <li>The Dark Knight Trilogy</li>
+          <li>Batman v Superman, Justice League, The Flash</li>
+          <li>The Batman, The Batman: Part II</li>
+        </ul>
+      </div>
+
+      <div class="fadeIn">
+        <h3 class="text-3xl font-bold mb-4 border-b border-yellow-600 pb-2">
+          📺 Live-Action TV
+        </h3>
+        <ul class="bat-list text-gray-200 space-y-2">
+          <li>Batman (1966–68)</li>
+          <li>Birds of Prey (2002–03)</li>
+          <li>Gotham (2014–19)</li>
+          <li>Titans (2018–23)</li>
+          <li>Batwoman (2019–22)</li>
+          <li>Gotham Knights (2023)</li>
+        </ul>
+      </div>
+
+      <div class="fadeIn">
+        <h3 class="text-3xl font-bold mb-4 border-b border-yellow-600 pb-2">
+          🎞️ Animated Series
+        </h3>
+        <ul class="bat-list text-gray-200 space-y-2">
+          <li>Batman: The Animated Series (1992–95)</li>
+          <li>Batman Beyond (1999–2002)</li>
+          <li>The Batman (2004–08)</li>
+          <li>Batman: The Brave and the Bold (2008–11)</li>
+          <li>Beware the Batman (2013–14)</li>
+          <li>Batwheels (2022–present)</li>
+          <li>Batman: Caped Crusader (2024–present)</li>
+        </ul>
+      </div>
+
+      <div class="fadeIn">
+        <h3 class="text-3xl font-bold mb-4 border-b border-yellow-600 pb-2">
+          📚 Comic Eras
+        </h3>
+        <ul class="bat-list text-gray-200 space-y-2">
+          <li>Golden Age: Noir detective stories</li>
+          <li>Silver Age: Campy and colorful adventures</li>
+          <li>Modern Age: Dark, psychological tales</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="text-center mt-16 py-6 border-t border-yellow-700 text-gray-400 text-sm fadeIn">
+      Gotham City Archives | The Legend of The Dark Knight
+    </footer>
+  </body>
+</html>
